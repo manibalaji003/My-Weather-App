@@ -1,6 +1,7 @@
-import React, { useState, useEffect,useContext } from 'react';
-import {Container, Form,Row,Col, FloatingLabel, Navbar } from 'react-bootstrap';
-
+/* eslint-disable react/prop-types */
+import  { useState} from 'react';
+import {Container, Form,Row,Col, FloatingLabel} from 'react-bootstrap';
+import Swal from 'sweetalert2'
 import axios from 'axios';
 
 import Button from '@mui/material/Button';
@@ -14,6 +15,7 @@ const Mainpage = (props) => {
 
  
   const [cityname, setCityName] = useState("");
+  // eslint-disable-next-line react/prop-types
   const [resData, setResData] = useState(props.firstLoadData);
 
 
